@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2022-06-16T15:44:34.621">
+<file name="/home/sinensia/hello-spring-testing/src/test/java/com/sinensia/demo/HelloSpringTestingApplicationTests.java">
+<violation beginline="10" endline="11" begincolumn="5" endcolumn="5" rule="JUnitTestsShouldIncludeAssert" ruleset="Best Practices" package="com.sinensia.demo" class="HelloSpringTestingApplicationTests" method="contextLoads" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestsshouldincludeassert" priority="3">
+JUnit tests should include assert() or fail()
+</violation>
+</file>
+<file name="/home/sinensia/hello-spring-testing/src/test/java/com/sinensia/demo/HttpRequestTest.java">
+<violation beginline="10" endline="10" begincolumn="1" endcolumn="34" rule="UnusedImports" ruleset="Best Practices" package="com.sinensia.demo" class="HttpRequestTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'java.lang.Float.NaN'
+</violation>
+<violation beginline="19" endline="19" begincolumn="17" endcolumn="20" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.sinensia.demo" class="HttpRequestTest" variable="port" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="22" begincolumn="22" endcolumn="33" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.sinensia.demo" class="HttpRequestTest" variable="restTemplate" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="26" begincolumn="51" endcolumn="69" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.sinensia.demo" class="HttpRequestTest" method="greetingShouldReturnDefaultMessage" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;http://localhost:&quot; appears 27 times in this file; the first occurrence is on line 26
+</violation>
+<violation beginline="56" endline="56" begincolumn="28" endcolumn="32" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.sinensia.demo" class="HttpRequestTest" method="catAddWithMissingValue" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;1.0&quot; appears 5 times in this file; the first occurrence is on line 56
+</violation>
+<violation beginline="94" endline="94" begincolumn="28" endcolumn="32" rule="AvoidDuplicateLiterals" ruleset="Error Prone" package="com.sinensia.demo" class="HttpRequestTest" method="canSubstractValidNumber" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#avoidduplicateliterals" priority="3">
+The String literal &quot;0.0&quot; appears 5 times in this file; the first occurrence is on line 94
+</violation>
+</file>
+<file name="/home/sinensia/hello-spring-testing/src/test/java/com/sinensia/demo/SmokeTest.java">
+<violation beginline="13" endline="13" begincolumn="28" endcolumn="37" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.sinensia.demo" class="SmokeTest" variable="controller" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+</file>
+<file name="/home/sinensia/hello-spring-testing/src/test/java/com/sinensia/demo/TestWebApplicationTest.java">
+<violation beginline="20" endline="20" begincolumn="21" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.sinensia.demo" class="TestWebApplicationTest" variable="mockMvc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="28" begincolumn="12" endcolumn="5" rule="JUnitTestsShouldIncludeAssert" ruleset="Best Practices" package="com.sinensia.demo" class="TestWebApplicationTest" method="shouldReturnDefaultMessage" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestsshouldincludeassert" priority="3">
+JUnit tests should include assert() or fail()
+</violation>
+</file>
+<file name="/home/sinensia/hello-spring-testing/src/test/java/com/sinensia/demo/WebLayerTest.java">
+<violation beginline="6" endline="6" begincolumn="1" endcolumn="59" rule="UnusedImports" ruleset="Best Practices" package="com.sinensia.demo" class="WebLayerTest" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'org.springframework.boot.test.mock.mockito.MockBean'
+</violation>
+<violation beginline="19" endline="19" begincolumn="21" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.sinensia.demo" class="WebLayerTest" variable="mockMvc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="22" endline="27" begincolumn="12" endcolumn="5" rule="JUnitTestsShouldIncludeAssert" ruleset="Best Practices" package="com.sinensia.demo" class="WebLayerTest" method="shouldReturnDefaultMessage" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestsshouldincludeassert" priority="3">
+JUnit tests should include assert() or fail()
+</violation>
+</file>
+<file name="/home/sinensia/hello-spring-testing/src/test/java/com/sinensia/demo/WebMockTest.java">
+<violation beginline="20" endline="20" begincolumn="21" endcolumn="27" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.sinensia.demo" class="WebMockTest" variable="mockMvc" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="23" endline="23" begincolumn="29" endcolumn="35" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.sinensia.demo" class="WebMockTest" variable="service" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+<violation beginline="26" endline="32" begincolumn="12" endcolumn="5" rule="JUnitTestsShouldIncludeAssert" ruleset="Best Practices" package="com.sinensia.demo" class="WebMockTest" method="greetingShouldReturnMessageFromService" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#junittestsshouldincludeassert" priority="3">
+JUnit tests should include assert() or fail()
+</violation>
+</file>
+</pmd>
