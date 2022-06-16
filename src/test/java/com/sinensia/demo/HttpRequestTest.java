@@ -5,6 +5,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import static java.lang.Float.NaN;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -28,6 +31,23 @@ public class HttpRequestTest {
     public void catAdd() {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=2", String.class))
                 .isEqualTo("3.0");
+    }
+
+
+    @ParameterizedTest
+    @CsvSource({
+            "1.0,   2.0,    3.0",
+            "1.0,   1.0,    2.0",
+            "1.0,  -2.0,   -1.0",
+            "1.0,    '',    1.0",
+            "1.0,   -1.0,   0.0"
+
+    })
+    void canAddParametrizado(String a, String b,String expected){
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=" + a + "&b="+ b, String.class))
+                .isEqualTo(expected);
+
+
     }
 
     @Test
