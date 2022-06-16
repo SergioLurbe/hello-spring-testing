@@ -23,4 +23,41 @@ public class HttpRequestTest {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/", String.class))
                 .contains("Hola ke ase");
     }
+
+    @Test
+    public void catAdd() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=2", String.class))
+                .isEqualTo("3.0");
+    }
+
+    @Test
+    public void catAddWithMissingValue() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1", String.class))
+                .isEqualTo("1.0");
+    }
+
+    @Test
+    public void catAddWithEmptyValue() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=", String.class))
+                .isEqualTo("1.0");
+    }
+
+    @Test
+    public void catAddWithFractions() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1.5&b=2", String.class))
+                .isEqualTo("3.5");
+    }
+
+    @Test
+    public void catAddWithInvalidNumber() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=X", String.class))
+                .isEqualTo("");
+    }
+
+    @Test
+    public void catAddNegativeNumbers() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=-2", String.class))
+                .isEqualTo("-1.0");
+    }
+
 }
