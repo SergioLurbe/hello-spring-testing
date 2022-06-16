@@ -1,0 +1,5 @@
+package com.sinensia.demo
+
+public @interface Generated {
+
+}
