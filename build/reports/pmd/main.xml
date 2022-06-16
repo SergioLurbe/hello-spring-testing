@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd"
+    version="6.21.0" timestamp="2022-06-16T15:24:22.265">
+<file name="/home/sinensia/hello-spring-testing/src/main/java/com/sinensia/demo/GreetingController.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="62" rule="UnusedImports" ruleset="Best Practices" package="com.sinensia.demo" class="GreetingController" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'org.springframework.beans.factory.annotation.Autowired'
+</violation>
+<violation beginline="10" endline="10" begincolumn="29" endcolumn="35" rule="BeanMembersShouldSerialize" ruleset="Error Prone" package="com.sinensia.demo" class="GreetingController" variable="service" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_errorprone.html#beanmembersshouldserialize" priority="3">
+Found non-transient, non-static member. Please mark as transient or provide accessors.
+</violation>
+</file>
+<file name="/home/sinensia/hello-spring-testing/src/main/java/com/sinensia/demo/HomeController.java">
+<violation beginline="3" endline="3" begincolumn="1" endcolumn="49" rule="UnusedImports" ruleset="Best Practices" package="com.sinensia.demo" class="HomeController" externalInfoUrl="https://pmd.github.io/pmd-6.21.0/pmd_rules_java_bestpractices.html#unusedimports" priority="4">
+Avoid unused imports such as 'org.springframework.stereotype.Controller'
+</violation>
+</file>
+</pmd>
