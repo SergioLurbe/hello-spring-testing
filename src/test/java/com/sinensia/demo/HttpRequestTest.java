@@ -55,6 +55,13 @@ public class HttpRequestTest {
                 .isEqualTo("");
     }
     */
+
+    @Test
+    public void canAddWithInvalidNumber() {
+        assertThat(this.restTemplate.getForEntity("http://localhost:" + port + "/add?a=1&b=X", String.class)
+                .getStatusCode().is4xxClientError()).isTrue();
+    }
+
     @Test
     public void catAddNegativeNumbers() {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=-2", String.class))
