@@ -24,4 +24,26 @@ public class HomeController {
         return a + b;
     }
 
+    @GetMapping("/substract")
+    public Float substract(
+            @RequestParam(value = "a", defaultValue = "0") Float a,
+            @RequestParam(value = "b", defaultValue = "0") Float b
+    ){
+        return a - b;
+    }
+    @GetMapping("/multiply")
+    public Float multiply(
+            @RequestParam(value = "a", defaultValue = "0") Float a,
+            @RequestParam(value = "b", defaultValue = "0") Float b
+    ){
+        return a * b;
+    }
+    @GetMapping("/divide")
+    public Float divide(
+            @RequestParam(value = "a", defaultValue = "0") Float a,
+            @RequestParam(value = "b", defaultValue = "0") Float b
+    ){
+        return a / b;
+    }
+
 }

@@ -68,4 +68,99 @@ public class HttpRequestTest {
                 .isEqualTo("-1.0");
     }
 
+    @Test
+    public void canSubstractValidNumber() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/substract?a=1&b=1", String.class))
+                .isEqualTo("0.0");
+    }
+    @Test
+    public void canSubstractInValidNumber() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/substract?a=1&b=X", String.class))
+                .contains(":400");
+    }
+    @Test
+    public void canSubstractMissingValue() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/substract?a=1", String.class))
+                .isEqualTo("1.0");
+    }
+    @Test
+    public void canSubstractEmptyValue() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/substract?a=1&b=", String.class))
+                .isEqualTo("1.0");
+    }
+    @Test
+    public void canSubstractWithFractions() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/substract?a=2.5&b=2", String.class))
+                .isEqualTo("0.5");
+    }
+    @Test
+    public void canMultiplyValidNumber() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=2&b=2", String.class))
+                .isEqualTo("4.0");
+    }
+    @Test
+    public void canMultiplyInValidNumber() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/multiply?a=1&b=X", String.class))
+                .contains(":400");
+    }
+    @Test
+    public void canMultiplyMissingValue() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/multiply?a=1", String.class))
+                .isEqualTo("0.0");
+    }
+    @Test
+    public void canMultiplyEmptyValue() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/multiply?a=1&b=", String.class))
+                .isEqualTo("0.0");
+    }
+    @Test
+    public void canMultiplyWithFractions() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/multiply?a=2.5&b=2", String.class))
+                .isEqualTo("5.0");
+    }
+    @Test
+    public void canMultiplyWithZeros() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/multiply?a=2.5&b=0", String.class))
+                .isEqualTo("0.0");
+    }
+    @Test
+    public void canDivideValidNumber() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=2&b=2", String.class))
+                .isEqualTo("1.0");
+    }
+    @Test
+    public void canDivideInValidNumber() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=1&b=X", String.class))
+                .contains(":400");
+    }
+    @Test
+    public void canDivideMissingValue() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=1", String.class))
+                .contains("Infinity");
+    }
+    @Test
+    public void canDivideEmptyValue() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=1&b=", String.class))
+                .contains("Infinity");
+    }
+    @Test
+    public void canDivideWithFractions() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=2.5&b=2", String.class))
+                .isEqualTo("1.25");
+    }
+    @Test
+    public void canDivideWithZero() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=2&b=0", String.class))
+                .contains("Infinity");
+    }
+    @Test
+    public void canDivideBetweenZeros() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=0&b=0", String.class))
+                .contains("NaN");
+    }
+    @Test
+    public void canDivideZeroWith() {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/divide?a=0&b=2", String.class))
+                .isEqualTo("0.0");
+    }
 }
