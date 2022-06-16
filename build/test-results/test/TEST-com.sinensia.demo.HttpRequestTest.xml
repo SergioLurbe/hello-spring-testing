@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.sinensia.demo.HttpRequestTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2022-06-16T08:59:43" hostname="sinensia-virtual-machine" time="1.375">
+<testsuite name="com.sinensia.demo.HttpRequestTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2022-06-16T13:45:01" hostname="sinensia-virtual-machine" time="3.304">
   <properties/>
-  <testcase name="canMultiplyInValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.275"/>
-  <testcase name="canSubstractMissingValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.025"/>
-  <testcase name="catAddWithFractions()" classname="com.sinensia.demo.HttpRequestTest" time="0.011"/>
-  <testcase name="catAddNegativeNumbers()" classname="com.sinensia.demo.HttpRequestTest" time="0.01"/>
-  <testcase name="catAdd()" classname="com.sinensia.demo.HttpRequestTest" time="0.011"/>
-  <testcase name="canMultiplyEmptyValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.008"/>
-  <testcase name="canMultiplyWithZeros()" classname="com.sinensia.demo.HttpRequestTest" time="0.009"/>
-  <testcase name="canSubstractInValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.013"/>
-  <testcase name="canMultiplyWithFractions()" classname="com.sinensia.demo.HttpRequestTest" time="0.014"/>
-  <testcase name="canDivideInValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.014"/>
-  <testcase name="catAddWithMissingValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.012"/>
-  <testcase name="canDivideZeroWith()" classname="com.sinensia.demo.HttpRequestTest" time="0.009"/>
-  <testcase name="canMultiplyMissingValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.041"/>
-  <testcase name="canSubstractWithFractions()" classname="com.sinensia.demo.HttpRequestTest" time="0.012"/>
-  <testcase name="canDivideWithFractions()" classname="com.sinensia.demo.HttpRequestTest" time="0.018"/>
-  <testcase name="catAddWithEmptyValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.014"/>
+  <testcase name="canMultiplyInValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="1.307"/>
+  <testcase name="canSubstractMissingValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.071"/>
+  <testcase name="catAddWithFractions()" classname="com.sinensia.demo.HttpRequestTest" time="0.037"/>
+  <testcase name="catAddNegativeNumbers()" classname="com.sinensia.demo.HttpRequestTest" time="0.049"/>
+  <testcase name="catAdd()" classname="com.sinensia.demo.HttpRequestTest" time="0.046"/>
+  <testcase name="canMultiplyEmptyValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.044"/>
+  <testcase name="canMultiplyWithZeros()" classname="com.sinensia.demo.HttpRequestTest" time="0.025"/>
+  <testcase name="canSubstractInValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.021"/>
+  <testcase name="canMultiplyWithFractions()" classname="com.sinensia.demo.HttpRequestTest" time="0.026"/>
+  <testcase name="canDivideInValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.041"/>
+  <testcase name="catAddWithMissingValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.03"/>
+  <testcase name="canDivideZeroWith()" classname="com.sinensia.demo.HttpRequestTest" time="0.039"/>
+  <testcase name="canMultiplyMissingValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.065"/>
+  <testcase name="canSubstractWithFractions()" classname="com.sinensia.demo.HttpRequestTest" time="0.033"/>
+  <testcase name="canDivideWithFractions()" classname="com.sinensia.demo.HttpRequestTest" time="0.032"/>
+  <testcase name="catAddWithEmptyValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.021"/>
   <testcase name="canDivideValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.019"/>
-  <testcase name="canSubstractValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.016"/>
-  <testcase name="canMultiplyValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.017"/>
-  <testcase name="canDivideMissingValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.015"/>
-  <testcase name="canAddWithInvalidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.019"/>
-  <testcase name="greetingShouldReturnDefaultMessage()" classname="com.sinensia.demo.HttpRequestTest" time="0.015"/>
-  <testcase name="canDivideEmptyValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.028"/>
-  <testcase name="canSubstractEmptyValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.034"/>
-  <testcase name="canDivideBetweenZeros()" classname="com.sinensia.demo.HttpRequestTest" time="0.03"/>
-  <testcase name="canDivideWithZero()" classname="com.sinensia.demo.HttpRequestTest" time="0.031"/>
-  <testcase name="[1] a=1.0, b=2.0, expected=3.0" classname="com.sinensia.demo.HttpRequestTest" time="0.049"/>
-  <testcase name="[2] a=1.0, b=1.0, expected=2.0" classname="com.sinensia.demo.HttpRequestTest" time="0.019"/>
-  <testcase name="[3] a=1.0, b=-2.0, expected=-1.0" classname="com.sinensia.demo.HttpRequestTest" time="0.03"/>
-  <testcase name="[4] a=1.0, b=, expected=1.0" classname="com.sinensia.demo.HttpRequestTest" time="0.016"/>
-  <testcase name="[5] a=1.0, b=-1.0, expected=0.0" classname="com.sinensia.demo.HttpRequestTest" time="0.021"/>
-  <system-out><![CDATA[2022-06-16 10:59:42.180  INFO 76733 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.sinensia.demo.HttpRequestTest], using SpringBootContextLoader
-2022-06-16 10:59:42.182  INFO 76733 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.sinensia.demo.HttpRequestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2022-06-16 10:59:42.182  INFO 76733 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.sinensia.demo.HttpRequestTest]: HttpRequestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2022-06-16 10:59:42.188  INFO 76733 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.sinensia.demo.HelloSpringTestingApplication for test class com.sinensia.demo.HttpRequestTest
-2022-06-16 10:59:42.196  INFO 76733 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2022-06-16 10:59:42.197  INFO 76733 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@320be73, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@435e416c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6af310c7, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4aed311e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4c38cd16, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7ddcb0dc, org.springframework.test.context.event.EventPublishingTestExecutionListener@f5bf288, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2c1d57bc, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@26c77f54, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3e856100, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6e9a0bea, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@28fc1132, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@355ce6a6]
+  <testcase name="canSubstractValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.015"/>
+  <testcase name="canMultiplyValidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.043"/>
+  <testcase name="canDivideMissingValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.018"/>
+  <testcase name="canAddWithInvalidNumber()" classname="com.sinensia.demo.HttpRequestTest" time="0.07"/>
+  <testcase name="greetingShouldReturnDefaultMessage()" classname="com.sinensia.demo.HttpRequestTest" time="0.034"/>
+  <testcase name="canDivideEmptyValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.044"/>
+  <testcase name="canSubstractEmptyValue()" classname="com.sinensia.demo.HttpRequestTest" time="0.02"/>
+  <testcase name="canDivideBetweenZeros()" classname="com.sinensia.demo.HttpRequestTest" time="0.033"/>
+  <testcase name="canDivideWithZero()" classname="com.sinensia.demo.HttpRequestTest" time="0.025"/>
+  <testcase name="[1] a=1.0, b=2.0, expected=3.0" classname="com.sinensia.demo.HttpRequestTest" time="0.133"/>
+  <testcase name="[2] a=1.0, b=1.0, expected=2.0" classname="com.sinensia.demo.HttpRequestTest" time="0.031"/>
+  <testcase name="[3] a=1.0, b=-2.0, expected=-1.0" classname="com.sinensia.demo.HttpRequestTest" time="0.028"/>
+  <testcase name="[4] a=1.0, b=, expected=1.0" classname="com.sinensia.demo.HttpRequestTest" time="0.035"/>
+  <testcase name="[5] a=1.0, b=-1.0, expected=0.0" classname="com.sinensia.demo.HttpRequestTest" time="0.025"/>
+  <system-out><![CDATA[2022-06-16 15:44:56.418  INFO 88340 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.sinensia.demo.HttpRequestTest], using SpringBootContextLoader
+2022-06-16 15:44:56.424  INFO 88340 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.sinensia.demo.HttpRequestTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-06-16 15:44:56.429  INFO 88340 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.sinensia.demo.HttpRequestTest]: HttpRequestTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-06-16 15:44:56.449  INFO 88340 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.sinensia.demo.HelloSpringTestingApplication for test class com.sinensia.demo.HttpRequestTest
+2022-06-16 15:44:56.463  INFO 88340 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-06-16 15:44:56.471  INFO 88340 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@128026c0, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@474e12fe, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@27a7676d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@753cceca, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6699408b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@51f76744, org.springframework.test.context.event.EventPublishingTestExecutionListener@4df7fe18, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5eae33f2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@721fadb4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@183839f4, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6a4d03d5, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@45d39ccd, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4aaefbce]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -47,22 +47,22 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.7.0)
 
-2022-06-16 10:59:42.307  INFO 76733 --- [    Test worker] com.sinensia.demo.HttpRequestTest        : Starting HttpRequestTest using Java 11.0.15 on sinensia-virtual-machine with PID 76733 (started by sinensia in /home/sinensia/hello-spring-testing)
-2022-06-16 10:59:42.308  INFO 76733 --- [    Test worker] com.sinensia.demo.HttpRequestTest        : No active profile set, falling back to 1 default profile: "default"
-2022-06-16 10:59:43.052  INFO 76733 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2022-06-16 10:59:43.067  INFO 76733 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2022-06-16 10:59:43.068  INFO 76733 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
-2022-06-16 10:59:43.231  INFO 76733 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2022-06-16 10:59:43.231  INFO 76733 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 905 ms
-2022-06-16 10:59:43.667  INFO 76733 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 37611 (http) with context path ''
-2022-06-16 10:59:43.673  INFO 76733 --- [    Test worker] com.sinensia.demo.HttpRequestTest        : Started HttpRequestTest in 1.469 seconds (JVM running for 8.597)
-2022-06-16 10:59:43.782  INFO 76733 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-06-16 10:59:43.782  INFO 76733 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2022-06-16 10:59:43.783  INFO 76733 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2022-06-16 10:59:43.820  WARN 76733 --- [o-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: "X"]
-2022-06-16 10:59:44.081  WARN 76733 --- [o-auto-1-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: "X"]
-2022-06-16 10:59:44.122  WARN 76733 --- [-auto-1-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: "X"]
-2022-06-16 10:59:44.434  WARN 76733 --- [o-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: "X"]
+2022-06-16 15:44:56.672  INFO 88340 --- [    Test worker] com.sinensia.demo.HttpRequestTest        : Starting HttpRequestTest using Java 11.0.15 on sinensia-virtual-machine with PID 88340 (started by sinensia in /home/sinensia/hello-spring-testing)
+2022-06-16 15:44:56.674  INFO 88340 --- [    Test worker] com.sinensia.demo.HttpRequestTest        : No active profile set, falling back to 1 default profile: "default"
+2022-06-16 15:44:59.265  INFO 88340 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-06-16 15:44:59.334  INFO 88340 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-16 15:44:59.339  INFO 88340 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-16 15:44:59.850  INFO 88340 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-16 15:44:59.855  INFO 88340 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3167 ms
+2022-06-16 15:45:01.646  INFO 88340 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 44067 (http) with context path ''
+2022-06-16 15:45:01.656  INFO 88340 --- [    Test worker] com.sinensia.demo.HttpRequestTest        : Started HttpRequestTest in 5.165 seconds (JVM running for 21.97)
+2022-06-16 15:45:02.261  INFO 88340 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-16 15:45:02.263  INFO 88340 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-16 15:45:02.270  INFO 88340 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-06-16 15:45:02.480  WARN 88340 --- [o-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: "X"]
+2022-06-16 15:45:03.369  WARN 88340 --- [o-auto-1-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: "X"]
+2022-06-16 15:45:03.465  WARN 88340 --- [-auto-1-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: "X"]
+2022-06-16 15:45:03.969  WARN 88340 --- [o-auto-1-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Float'; nested exception is java.lang.NumberFormatException: For input string: "X"]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
