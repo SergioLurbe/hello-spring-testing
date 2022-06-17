@@ -26,13 +26,13 @@ public class HttpRequestTest {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/", String.class))
                 .contains("Hola ke ase");
     }
-
+/*
     @Test
     public void pruebaTestGreeting() throws Exception {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/greeting",
                 String.class)).contains("Me encanta programar");
     }
-
+*/
     @Test
     public void catAdd() {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=2", String.class))
