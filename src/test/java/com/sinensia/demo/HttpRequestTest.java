@@ -28,6 +28,12 @@ public class HttpRequestTest {
     }
 
     @Test
+    public void pruebaTestGreeting() throws Exception {
+        assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/greeting",
+                String.class)).contains("Me encanta programar");
+    }
+
+    @Test
     public void catAdd() {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/add?a=1&b=2", String.class))
                 .isEqualTo("3.0");
