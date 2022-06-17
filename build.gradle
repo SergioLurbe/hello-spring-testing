@@ -4,8 +4,17 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'com.adarshr.test-logger' version '3.2.0'
+    id 'com.adarshr.test-logger' version '3.2.0'
     id 'jacoco'
     id 'pmd'
+    id 'info.solidsoft.pitest' version '1.7.4'
+}
+
+jacocoTestReport {
+    dependsOn test
+    reports {
+        xml.required = true
+    }
 }
 
 group = 'com.sinensia'
@@ -31,6 +40,7 @@ jacocoTestReport {
     reports {
         xml.required = true
     }
+}
 
 pmd {
     consoleOutput = true
@@ -40,4 +50,11 @@ pmd {
     ignoreFailures = true
 }
 
+pitest {
+    junit5PluginVersion = '0.15'
+    targetClasses = ['com.example.SpringTest.*']  //by default "${project.group}.*"
+    threads = 4
+    outputFormats = ['XML', 'HTML']
+
 }
+
