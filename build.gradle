@@ -51,9 +51,16 @@ jacocoTestReport {
     }
 }
 
+/*
 group = 'com.sinensia'
 version = '0.0.1-' + System.getenv('BUILD_NUMBER')
 sourceCompatibility = '11'
+*/
+
+group = 'com.example'
+version = "1.0.0"
+sourceCompatibility = '11'
+
 
 repositories {
     mavenCentral()
