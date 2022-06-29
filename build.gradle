@@ -7,6 +7,25 @@ plugins {
     id 'jacoco'
     id 'pmd'
     id 'info.solidsoft.pitest' version '1.7.4'
+    id ("maven-publish")
+}
+
+publishing {
+    repositories {
+        maven {
+            name = "hello-spring-testing"
+            url = uri("https://github.com/SergioLurbe/hello-spring-testing")
+            credentials {
+                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
+                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
+            }
+        }
+    }
+    publications {
+        gpr(MavenPublication) {
+            from(components.java)
+        }
+    }
 }
 
 jacocoTestReport {
