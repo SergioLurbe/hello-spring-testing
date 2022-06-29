@@ -14,7 +14,7 @@ publishing {
     repositories {
         maven {
             name = "hello-spring-testing"
-            url = uri("https://github.com/SergioLurbe/hello-spring-testing")
+            url = uri("https://maven.pkg.github.com/SergioLurbe/hello-spring-testing")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
                 password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
