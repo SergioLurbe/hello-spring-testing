@@ -43,7 +43,7 @@ pipeline {
         stage('Publish') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockergit', passwordVariable: 'TOKEN', usernameVariable: 'USERNAME')]) {
-                    sh 'gradle pusblish'
+                    sh 'gradle publish'
                 }
             }
         }
