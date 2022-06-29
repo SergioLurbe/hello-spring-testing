@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        /*
+
         stage('Test') {
             steps {
                 sh './gradlew clean test check pitest'
@@ -20,7 +20,7 @@ pipeline {
                 }
             }
         }
-        */
+
         stage('Build') {
             steps {
                 // Run Gradle Wrapper
