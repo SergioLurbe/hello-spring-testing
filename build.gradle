@@ -17,8 +17,8 @@ plugins {
 nexusPublishing {
     repositories {
         myNexus {
-            nexusUrl = uri("localhost:9084")
-            snapshotRepositoryUrl = uri("localhost:9084/snapshots")
+            nexusUrl = uri("https://localhost:9084")
+            snapshotRepositoryUrl = uri("https://localhost:9084/snapshots")
             username = "admin" // defaults to project.properties["myNexusUsername"]
             password = "arsenal6" // defaults to project.properties["myNexusPassword"]
         }

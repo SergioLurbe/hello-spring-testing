@@ -3,10 +3,13 @@
   <groupId>com.sinensia</groupId>
   <artifactId>demo</artifactId>
   <versioning>
-    <latest>0.0.1-SNAPSHOT</latest>
+    <latest>0.0.1-null</latest>
+    <release>0.0.1-null</release>
     <versions>
+      <version>0.0.1-22</version>
       <version>0.0.1-SNAPSHOT</version>
+      <version>0.0.1-null</version>
     </versions>
-    <lastUpdated>20220629133302</lastUpdated>
+    <lastUpdated>20220629155525</lastUpdated>
   </versioning>
 </metadata>
