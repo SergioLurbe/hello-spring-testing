@@ -2,6 +2,7 @@ pipeline {
     agent any
 
     stages {
+        /*
         stage('Test') {
             steps {
                 sh './gradlew clean test check pitest'
@@ -19,6 +20,7 @@ pipeline {
                 }
             }
         }
+        */
         stage('Build') {
             steps {
                 // Run Gradle Wrapper
@@ -42,7 +44,7 @@ pipeline {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'dockergit', passwordVariable: 'TOKEN', usernameVariable: 'USERNAME')]) {
                     withGradle {
-                        sh 'gradle publish'
+                        sh './gradle publish'
                     }
                 }
             }
