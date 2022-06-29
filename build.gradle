@@ -13,7 +13,7 @@ plugins {
 publishing {
     repositories {
         maven {
-            name = "hello-spring-testing"
+            name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/SergioLurbe/hello-spring-testing")
             credentials {
                 username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
