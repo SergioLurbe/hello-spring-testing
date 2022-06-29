@@ -36,7 +36,7 @@ jacocoTestReport {
 }
 
 group = 'com.sinensia'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1-BUILD_NUMBER'
 sourceCompatibility = '11'
 
 repositories {
